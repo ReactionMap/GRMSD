@@ -1,12 +1,12 @@
-% Ú‹óŠÔŠÉ˜a–@
+% æ¥ç©ºé–“ç·©å’Œæ³•
 % Tangent Space Relaxation (TSR) method
 
 T = eye(n_data);
 % R = R0;
-R = eye(dim); % ‰Šú’¼Œğs—ñ (initial orthogonal matrix)
-F = zeros(1,10000); % –Ú“IŠÖ”’l (value of object function)
+R = eye(dim); % åˆæœŸç›´äº¤è¡Œåˆ— (initial orthogonal matrix)
+F = zeros(1,10000); % ç›®çš„é–¢æ•°å€¤ (value of object function)
 alpha = [1/2,1/5,1/10,1/50,0,0.3,1]; 
-sub_alpha = 3; % ƒpƒ‰ƒ[ƒ^ƒ¿ (parameter alpha)
+sub_alpha = 3; % ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿Î± (parameter alpha)
 skew = zeros(n_data,n_data);
 temp = T;
 counter = 0;

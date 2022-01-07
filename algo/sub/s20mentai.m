@@ -1,9 +1,9 @@
 function[Motion20]=s20mentai()
-% ³“ñ\–Ê‘Ì‚Ì•s•Ï•ÏŠ·¶¬
+% æ­£äºŒåé¢ä½“ã®ä¸å¤‰å¤‰æ›ç”Ÿæˆ
 % invariant transformation of regular icosahedron
 
-GR = (1+sqrt(5))/2; % ‰©‹à”ä (golden ratio)
-Motion20 = zeros(3,3,120); % ³“ñ\–Ê‘Ì‚Ì•s•Ï•ÏŠ· (invariant transformation of regular icosahedron)
+GR = (1+sqrt(5))/2; % é»„é‡‘æ¯” (golden ratio)
+Motion20 = zeros(3,3,120); % æ­£äºŒåé¢ä½“ã®ä¸å¤‰å¤‰æ› (invariant transformation of regular icosahedron)
 
 S20 = [GR GR 1 0 0 1 -GR -1 0 0 -1 -GR;
        -1 1 0 -GR -GR 0 -1 0 GR GR 0 1;

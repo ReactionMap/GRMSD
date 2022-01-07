@@ -15,7 +15,7 @@ if data_num_B<data_num_A
     data_num_A=data_num_C;
 end
 
-%data_num_A<=data_num_B‚ğ‘z’è
+%data_num_A<=data_num_Bã‚’æƒ³å®š
 if data_num_A==0 ||data_num_B==0
     RMSD=inf;
     return

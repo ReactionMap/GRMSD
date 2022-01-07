@@ -1,4 +1,4 @@
-/* ƒnƒ“ƒKƒŠ[–@‚ÌŒvZiC++j*/
+/* ãƒãƒ³ã‚¬ãƒªãƒ¼æ³•ã®è¨ˆç®—ï¼ˆC++ï¼‰*/
 /* calculations of Hungarian method (C++) */
 
 #define _GLIBCXX_DEBUG
@@ -66,13 +66,13 @@ void mexFunction( int Nreturned, mxArray *returned[], int Noperand, const mxArra
   double *permutation_out;
   int rows;
 
-/* a‚Ìs‚Ì”‚ğ•Û‘¶ */
+/* aã®è¡Œã®æ•°ã‚’ä¿å­˜ */
 /* store the number of rows of a */
   rows = mxGetM(operand[0]);
 
   *returned = mxCreateDoubleMatrix(rows * rows,1,mxREAL);
   
-/* Matlab‘¤‚Ì•Ï”‚ÌƒAƒhƒŒƒX‚ğC‘¤‚Ì•Ï”‚ÉƒRƒs[‚·‚é */
+/* Matlabå´ã®å¤‰æ•°ã®ã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’Cå´ã®å¤‰æ•°ã«ã‚³ãƒ”ãƒ¼ã™ã‚‹ */
 /* copy the address of Matlab-variables to C-variables */
   a = mxGetPr(operand[0]);
   permutation = mxGetPr(operand[1]);  

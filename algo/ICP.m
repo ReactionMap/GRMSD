@@ -3,7 +3,7 @@ a=size(A);
 b=size(B);
 data_num_A=a(2);
 data_num_B=b(2);
-%data_num_A<=data_num_B‚ğ‘z’è
+%data_num_A<=data_num_Bã‚’æƒ³å®š
 
 penalty=zeros(data_num_B,data_num_A);
 for i=1:data_num_B
