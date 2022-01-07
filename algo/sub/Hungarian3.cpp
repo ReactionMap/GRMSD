@@ -6,7 +6,7 @@
 #include <vector>
 #include <algorithm>
 #include "mex.h"
-#include "matrix.h"
+#include "Matrix.h"
 #include <cstdlib>
 
 using namespace std;
