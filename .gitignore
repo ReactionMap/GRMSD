@@ -3,7 +3,7 @@ query/
 target/
 
 # CSV files
-.csv
+*.csv
 
 # Windows default autosave extension
 *.asv
