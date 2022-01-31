@@ -3,7 +3,7 @@ a=size(A);
 b=size(B);
 data_num_A=a(2);
 data_num_B=b(2);
-%data_num_A<=data_num_Bを想定
+% assuming data_num_A<=data_num_B
 
 penalty=zeros(data_num_B,data_num_A);
 for i=1:data_num_B
