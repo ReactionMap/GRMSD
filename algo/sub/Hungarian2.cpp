@@ -1,4 +1,3 @@
-/* ハンガリー法の計算（C++）*/
 /* calculations of Hungarian method (C++) */
 
 #define _GLIBCXX_DEBUG
@@ -66,13 +65,11 @@ void mexFunction( int Nreturned, mxArray *returned[], int Noperand, const mxArra
   double *permutation_out;
   int rows;
 
-/* aの行の数を保存 */
 /* store the number of rows of a */
   rows = mxGetM(operand[0]);
 
   *returned = mxCreateDoubleMatrix(rows * rows,1,mxREAL);
   
-/* Matlab側の変数のアドレスをC側の変数にコピーする */
 /* copy the address of Matlab-variables to C-variables */
   a = mxGetPr(operand[0]);
   permutation = mxGetPr(operand[1]);  

@@ -1,5 +1,3 @@
-/* ?庶?ス?ス?スK?ス?ス?ス[?ス@?スフ計?スZ?スiC++?スj?スi?スT?スC?スY?スフ異なゑソス鼾?ソスj*/
-
 #define _GLIBCXX_DEBUG
 #include <iostream>
 #include <math.h>
@@ -68,13 +66,11 @@ void mexFunction( int Nreturned, mxArray *returned[], int Noperand, const mxArra
   double *permutation_out;
   int rows,cols;
 
-  /* a?スフ行?スフ撰ソス?ス?スロ托ソス */  
   rows = mxGetM(operand[0]);
   cols = mxGetN(operand[0]);
 
   *returned = mxCreateDoubleMatrix(rows * cols,1,mxREAL);
   
-  /* Matlab?ス?ス?スフ変撰ソス?スフア?スh?ス?ス?スX?ス?スC?ス?ス?スフ変撰ソス?スノコ?スs?ス[?ス?ス?ス?ス */
   a = mxGetPr(operand[0]);
   permutation = mxGetPr(operand[1]);  
   n_data1 = mxGetPr(operand[2]);

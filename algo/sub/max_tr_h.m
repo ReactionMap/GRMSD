@@ -1,4 +1,3 @@
-% ハンガリー法による割当問題解
 % Assignment problem solution with Hungarian method
 
 function [T] = max_tr_h(X)

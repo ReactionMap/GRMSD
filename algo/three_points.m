@@ -15,7 +15,7 @@ if data_num_B<data_num_A
     data_num_A=data_num_C;
 end
 
-%data_num_A<=data_num_Bを想定
+% assuming data_num_A<=data_num_B
 if data_num_A==0 ||data_num_B==0
     RMSD=inf;
     return
@@ -189,7 +189,3 @@ else
     RMSD=min_val;
 end
 end
-
-        
-        
-        
