@@ -1,4 +1,4 @@
-function[]=calculate_RMSDs(options)
+function[]=grmsd(options)
 % add paths
 addpath('algo');
 addpath('algo/sub');
@@ -12,15 +12,16 @@ clus_mode=false;
 reduction=true;
 iter_num=4;
 
-args=argv()
-infile=args{1}
-outfile=args{2}
+args=argv();
+queryfile=args{1};
+targetfile=args{2};
+resultfile=args{3};
 
-data1=importdata(infile);
+data1=importdata(queryfile);
 data_num_1=data1(1,1);
 mol_num_1=(size(data1,1)-1)/data_num_1;
 
-data2=importdata(infile);
+data2=importdata(targetfile);
 data_num_2=data2(1,1);
 mol_num_2=(size(data2,1)-1)/data_num_2;
 
@@ -67,4 +68,4 @@ for i=1:mol_num_1
         end
     end
 end
-csvwrite(outfile,result)
+csvwrite(resultfile,result)
