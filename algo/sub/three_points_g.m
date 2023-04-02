@@ -11,7 +11,6 @@ B_norm_list=zeros(1,data_num);
 for i=1:data_num
     A_norm_list(i)=norm(A(:,i));
     B_norm_list(i)=norm(B(:,i));
-    fprintf('A_norm and B_norm');
 end
 
 penalty=zeros(data_num);
